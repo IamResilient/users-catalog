@@ -1,0 +1,74 @@
+@use "@/styles/variables" as *;
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.button {
+    width: 36px;
+    height: 36px;
+
+    border-radius: $radius-md;
+    border: 1px solid $color-border;
+    background: $color-white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover:not(:disabled) {
+        border-color: $color-primary;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+.navButton {
+    padding: 0 12px;
+    height: 36px;
+
+    border-radius: $radius-md;
+    border: 1px solid $color-border;
+    background: $color-white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover:not(:disabled) {
+        border-color: $color-primary;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+.active {
+    background: $color-primary;
+    color: $color-white;
+    border-color: $color-primary;
+}
+
+.dots {
+    height: 36px;
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-text-secondary;
+    font-weight: $font-weight-medium;
+}

@@ -1,0 +1,14 @@
+@use "@/styles/variables" as *;
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: $radius-md;
+  border: 1px solid $color-border;
+  font-size: $font-size-sm;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+  }
+}

@@ -1,0 +1,24 @@
+@use "@/styles/variables" as *;
+
+.page {
+  width: 100%;
+}
+
+.title {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  margin-bottom: 24px;
+}
+
+.toolbar {
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  min-height: 775px;
+
+  margin-bottom: 24px;
+}
